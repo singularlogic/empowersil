@@ -1,0 +1,4 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-01-04 11:26:11
+addon create simple --topLevelPackage eu.silo.sil --description "System Interoperability Layer"
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-01-04 11:31:38
