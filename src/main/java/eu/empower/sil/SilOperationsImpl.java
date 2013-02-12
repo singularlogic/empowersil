@@ -1,5 +1,6 @@
-package eu.silo.sil;
+package eu.empower.sil;
 
+import eu.empower.sil.SilOperations;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
@@ -20,7 +21,7 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 /**
- * Implementation of {@link SilOperations} interface.
+ * Implementation of {@link eu.empower.sil.SilOperations} interface.
  *
  * @since 1.1.1
  */

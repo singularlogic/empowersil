@@ -1,4 +1,4 @@
-package eu.silo.sil;
+package eu.empower.sil;
 
 /**
  * Interface of commands that are available via the Roo shell.

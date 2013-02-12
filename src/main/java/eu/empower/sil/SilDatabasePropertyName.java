@@ -1,4 +1,4 @@
-package eu.silo.sil;
+package eu.empower.sil;
 
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.lang3.builder.ToStringBuilder;

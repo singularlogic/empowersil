@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>eu.silo.sil</groupId>
-    <artifactId>eu.silo.sil</artifactId>
+    <groupId>eu.empower.sil</groupId>
+    <artifactId>eu.empower.sil</artifactId>
     <packaging>jar</packaging>
     <version>0.9.0-SNAPSHOT</version>
-    <name>eu-silo-sil</name>
+    <name>eu-empower-sil</name>
     <organization>
-        <name>Your project/company name goes here (used in copyright and vendor information in the manifest)</name>
+        <name>Empower Consortium - http://www.empower-project.eu </name>
     </organization>
     <licenses>
         <license>
@@ -17,12 +17,12 @@
         </license>
     </licenses>
     <description>System Interoperability Layer</description>
-    <url>http://www.some.company</url>
+    <url>http://www.empower-project.eu/</url>
     <properties>
         <roo.version>1.2.3.RELEASE</roo.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <google.code.project.name>${project.name}</google.code.project.name>
-        <repo.folder>eu/silo/sil</repo.folder>
+        <repo.folder>eu/empower/sil</repo.folder>
     </properties>
     <repositories>
         <repository>
@@ -139,6 +139,16 @@
             </extension>
         </extensions>
         <plugins>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -263,6 +273,7 @@
                 <url>http://192.168.1.202:6060/nexus/content/repositories/releases/</url>
             </repository>
             <snapshotRepository>
+                <uniqueVersion>true</uniqueVersion>
                 <id>ubitech-snapshots</id>
                 <name>UBITECH snapshot repository</name>
                 <url>http://192.168.1.202:6060/nexus/content/repositories/snapshots/</url>

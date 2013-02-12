@@ -1,4 +1,4 @@
-package eu.silo.sil;
+package eu.empower.sil;
 
 /**
  * Created with IntelliJ IDEA.

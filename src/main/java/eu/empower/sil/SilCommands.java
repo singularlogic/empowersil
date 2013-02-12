@@ -1,4 +1,4 @@
-package eu.silo.sil;
+package eu.empower.sil;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
@@ -33,7 +33,7 @@ public class SilCommands implements CommandMarker { // All command types must im
     /**
      * Get a reference to the SilOperations from the underlying OSGi container
      */
-    @Reference private SilOperations operations; 
+    @Reference private SilOperations operations;
     
     /**
      * Get a reference to the StaticFieldConverter from the underlying OSGi container;
