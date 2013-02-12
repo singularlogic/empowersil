@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.silo.sil</groupId>
     <artifactId>eu.silo.sil</artifactId>
-    <packaging>bundle</packaging>
-    <version>0.1.0.BUILD-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <version>0.9.0-SNAPSHOT</version>
     <name>eu-silo-sil</name>
     <organization>
         <name>Your project/company name goes here (used in copyright and vendor information in the manifest)</name>
@@ -250,4 +250,26 @@
             </plugin>
         </plugins>
     </build>
+
+ <profiles>
+    <profile>
+        <id>deployment</id>
+
+        <distributionManagement>
+            <repository>
+                <uniqueVersion>true</uniqueVersion>
+                <id>ubitech-releases</id>
+                <name>UBITECH release repository</name>
+                <url>http://192.168.1.202:6060/nexus/content/repositories/releases/</url>
+            </repository>
+            <snapshotRepository>
+                <id>ubitech-snapshots</id>
+                <name>UBITECH snapshot repository</name>
+                <url>http://192.168.1.202:6060/nexus/content/repositories/snapshots/</url>
+            </snapshotRepository>
+        </distributionManagement>
+
+    </profile>
+</profiles>
+
 </project>
